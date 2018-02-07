@@ -1,4 +1,4 @@
-package com.sskim.service;
+package com.sskim.webservice;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
