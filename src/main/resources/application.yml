@@ -1,8 +1,8 @@
 spring:
   profiles:
-    active: local
+    active: local # 기본 환경 선택
 
-# 기본 환경 선택 # local 환경
+# local 환경
 ---
 spring:
   profiles: local

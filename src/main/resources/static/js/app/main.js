@@ -1,12 +1,11 @@
 var main = {
-    init: function () {
+    init : function () {
         var _this = this;
-        $('#btn-save').on("click", function () {
+        $('#btn-save').on('click', function () {
             _this.save();
         });
     },
-
-    save: function () {
+    save : function () {
         var data = {
             title: $('#title').val(),
             author: $('#author').val(),
@@ -17,16 +16,16 @@ var main = {
             type: 'POST',
             url: '/posts',
             dataType: 'json',
-            contentType: 'application/json; charset=utf-8',
+            contentType:'application/json; charset=utf-8',
             data: JSON.stringify(data)
-        }).done(function () {
-            alert("글이 등록되었습니다.");
+        }).done(function() {
+            alert('글이 등록되었습니다.');
             location.reload();
         }).fail(function (error) {
             alert(error);
         });
-
     }
+
 };
 
 main.init();
