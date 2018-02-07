@@ -1,4 +1,4 @@
-package com.sskim.springwebservice;
+package com.sskim.service;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
